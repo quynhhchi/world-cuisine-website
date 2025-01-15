@@ -1,111 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>World Cuisine</title>
+    <title>Ẩm Thực Việt Nam</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
             color: #333;
         }
 
         header {
-            background-color: #ff6347;
+            background: url('https://imgchinhsachcuocsong.vnanet.vn/MediaUpload/Org/2023/09/06/195902-bien_tau_van_nguyen_lieu___kv.jpeg') no-repeat center center/cover;
+            height: 100vh;
             color: white;
-            padding: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 0;
         }
 
         nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.5rem 1rem;
             display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px 0;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 14px 20px;
+            margin: 0 1rem;
+            font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #575757;
-        }
-
-        .hero {
-            background-image: url('/mnt/data/file-TtBTaAXnCyZ2QLqDW6baDa');
-            height: 400px;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: red;
-            font-size: 36px;
+            color: #ff9800;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 2rem;
             text-align: center;
         }
 
-        h2 {
-            color: #ff6347;
-        }
-
-        footer {
-            background-color: #333;
+        .highlight {
+            background: #ff9800;
             color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
             text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
+        }
+
+        .card img {
             width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 1rem 0;
+            color: #ff9800;
+        }
+
+        .card a {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card a:hover {
+            background: #e68900;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <h1>Welcome to World Cuisine</h1>
-        <p>Explore flavors from every corner of the globe!</p>
-    </header>
     <nav>
-        <a href="#about">About Us</a>
-        <a href="#cuisines">Cuisines</a>
-        <a href="#contact">Contact</a>
+        <div class="logo">Ẩm Thực Việt</div>
+        <div class="menu">
+            <a href="#about">Giới thiệu</a>
+            <a href="#dishes">Món ăn</a>
+            <a href="#contact">Liên hệ</a>
+        </div>
     </nav>
-    <div class="hero">
-        <div>Discover the Best Global Dishes</div>
-    </div>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>World Cuisine is a platform dedicated to sharing the love for food from around the world. From street food to
-            fine dining, we bring you a variety of recipes and culinary experiences that celebrate diverse cultures.</p>
-    </section>
-    <section id="cuisines">
-        <img src='https://media.vov.vn/sites/default/files/styles/large/public/2024-02/food_1.jpg' alt='Spanish Cuisine'
-            width='400px'>
-        <img src='https://vietnamoriginal-travel.com/upload/images/BLOG/Vietnam-Cuisine/best-street-food-in-vietnam.jpeg'
-            alt='Italian Cuisine' width='400px'>
-        <h2>Explore Our Cuisines</h2>
-        <p>We offer a range of cuisines from Italian to Vietnamese, French to Spanish, and much more!</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have a question or suggestion? Reach out to us at <a
-                href="mailto:info@worldcuisine.com">info@worldcuisine.com</a>.</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 World Cuisine. All rights reserved.</p>
-    </footer>
-</body>
+    <header>
+        <h1>Chào Mừng Đến Với Ẩm Thực Việt Nam</h1>
+        <p>Hương vị truyền thống từ trái tim Việt.</p>
+    </header>
 
+    <section id="about">
+        <h2>Giới Thiệu</h2>
+        <p>Ẩm thực Việt Nam không chỉ là thức ăn, đó là một nghệ thuật và niềm tự hào dân tộc. Từ phở thơm ngon đến bánh xèo giòn rụm, mỗi món ăn mang một câu chuyện riêng.</p>
+    </section>
+
+    <section id="dishes">
+        <h2>Món Ngon</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.Z02VfhlzGxymC4qdxvUpigHaF7?w=239&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Phở">
+                <h3>Phở</h3>
+                <p>Món ăn quốc hồn quốc túy của người Việt.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.dVEdmD3qbi_Z8R_MuZeFhQHaEo?w=313&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Bánh Xèo">
+                <h3>Bánh Xèo</h3>
+                <p>Giòn tan với nước chấm đậm đà.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP._Cd2ZnXIOBIn8IBmxtCHvwHaE7?w=253&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7   " alt="Gỏi Cuốn">
+                <h3>Gỏi Cuốn</h3>
+                <p>Thanh mát và tốt cho sức khỏe.</p>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
